@@ -151,3 +151,115 @@ header {
 
 /** Body **/
 
+#body {
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+}
+
+/* About Section Container */
+#about-container {
+    background-color: #004aad; /* Blue background */
+    display: flex;
+    flex-direction: row; /* Horizontal layout */
+    align-items: center; /* Vertically align items */
+    justify-content: space-between; /* Space out text and image */
+    position: relative;
+    padding: 20px;
+    margin-right: 5%;
+    margin-left: 5%; /* Left margin for responsiveness */
+    gap: 20px;
+    overflow: hidden; /* Prevent overflow */
+    flex-wrap: wrap; /* Allow wrapping for responsiveness */
+}
+
+/* Left and Right Text Blocks */
+#about-text-left, #about-text-right {
+    flex: 1; /* Take up equal space */
+    color: white;
+    font-family: Wanted-Regular;
+    padding: 20px;
+    text-align: center;
+}
+
+#about-text-left {
+    text-align: left; /* Align text to the left */
+}
+
+#about-text-right {
+    text-align: right; /* Align text to the right */
+}
+
+/* Center Image */
+#about-image {
+    flex: 0 0 750px; /* Fixed width for image container */
+    position: relative; /* For overlap with light blue container */
+    display: flex;
+    justify-content: center; /* Center the image horizontally */
+    align-items: center; /* Center the image vertically */
+    margin-bottom: -50px; /* Allow overlap into the light blue container */
+}
+
+#about-image img {
+    max-width: 100%; /* Responsive scaling */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Ensure proper fit */
+    display: block;
+}
+
+/* Light Blue Container */
+#my-background-container {
+    background: url('../images/Background/my\ background.png') no-repeat center center / cover;
+    padding: 40px 20px; /* Ensure enough space for content */
+    font-family: Wanted-Regular;
+    display: flex;
+    flex-direction: column;
+}
+
+#my-background-title {
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: Wanted-Bold;
+    color: rgb(0, 0, 0); /* Adjust color for readability over the background */
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+#my-background-text-container {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    flex-wrap: wrap; /* Wraps text blocks if screen is too narrow */
+    justify-content: center; /* Centers text blocks */
+}
+
+#my-background-textp1, #my-background-textp2, #my-background-textp3 {
+    flex: 1; /* Distribute equal space */
+    color: rgb(79, 79, 79); /* Adjust text color for better visibility */
+    text-align: center;
+    margin: 10px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    #about-container {
+        flex-direction: column; /* Stack elements vertically */
+        align-items: center; /* Center all elements */
+        gap: 30px;
+    }
+
+    #about-text-left, #about-text-right {
+        order: 1; /* Ensure both text blocks are at the top */
+        text-align: center; /* Center-align text for smaller screens */
+    }
+
+    #about-image {
+        order: 2; /* Place the image after the text */
+        flex: 0 0 auto; /* Prevent shrinking */
+        margin-bottom: -30px; /* Ensure seamless transition into the next container */
+    }
+
+    #about-image img {
+        max-width: 90%; /* Scale image for smaller screens */
+    }
+}

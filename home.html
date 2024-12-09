@@ -118,39 +118,76 @@
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel purus et felis fringilla ullamcorper. Donec vel nulla vel arcu viverra tristique. Proin vel nisl non nunc luctus tincidunt.</p>
             </div>
         </div>
-        <form>
-            <label for="fname">First name:</label><br>
-            <input type="text" id="fname" name="fname"><br>
-            <label for="lname">Last name:</label><br>
-            <input type="text" id="lname" name="lname"><br>
-            <label for="email">Email:</label><br>
-            <input type="text" id="email" name="email"><br>
-            <label for="cments">Comments:</label><br>
-            <input type="text" id="cments" name="cments"><br>
-          </form>
+
+        <section class="contactform-section">
+            <div id="container">
+                <div id="feedback-form">
+                    <div id="feedback-form-heading">
+                        <p>Connect With Me!</p>
+                    </div>
+                    <form action="">
+                        <div class="form-input2">
+                            <label for="firstname">First Name <span>*</span></label>
+                            <input type="text" name="firstname" id="firstname" required autofocus>
+                            <label for="lastname">Last Name <span>*</span></label>
+                            <input type="text" name="lastname" id="lastname" required autofocus>
+                        </div>
+                        <div class="form-input">
+                            <label for="email">Email <span>*</span></label>
+                            <input type="text" name="email" id="email" required>
+                        </div>
+                        <div class="form-input">
+                            <label for="comments">Comments <span>*</span></label>
+                            <textarea name="comments" id="comments" cols="30" rows="10" required></textarea>
+                        </div>
+
+                        <div class="submit-row">
+                            <button type="submit" role="button">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </section>
 
         <script src="../static/scripts/home.js"></script>
         
     </body>
 
-    <footer id="footer">
-        <div id="footer-body">
-            <h1>
-                Brooke Santiago
-            </h1>
-            <div id="social-media-section">
-                <a href="#"><img src="../static/images/socialmedia/facebook.png" alt="Facebook"></a>
-                <a href="#"><img src="../static/images/socialmedia/instagram.png" alt="Instagram"></a>
-                <a href="#"><img src="../static/images/socialmedia/linkedin.png" alt="LinkedIn"></a>
+    <div id="footer-bottom">
+        <div id="social-icons">
+            <div>
+                <a href="">
+                    <img
+                        src="../brookeportfoliowebsite/static/images/logos/77364-instagram-icons-computer-black-logo-white-wine.svg"
+                        alt="Brooke Santiago - Instagram"
+                    />
+                </a>
             </div>
-            <div id="copyright-section">
-                <p>
-                    Copyright 2024
-                    <br />
-                    <a href="#">Chigekwu Chukwuezi.</a>
-                </p>
+            <div>
+                <a href="">
+                    <img
+                        src="../brookeportfoliowebsite/static/images/logos/iconmonstr-facebook-6.svg"
+                        alt="Brooke Santiago - Facebook"
+                    />
+                </a>
+            </div>
+            <div>
+                <a href="">
+                    <img
+                        src="../brookeportfoliowebsite/static/images/logos/linkedin-svgrepo-com.svg"
+                        alt="Brooke Santiago - LinkedIn"
+                    />
+                </a>
             </div>
         </div>
+        <div id="copyright-section">
+            <h1>Brooke Santiago</h1>
+            <p>
+                Copyright 2024
+                <br />
+                <a href="#">Chigekwu Chukwuezi.</a>
+            </p>
+        </div>
+    </div>
+</footer>
 
-    </footer>
 </div>

@@ -240,6 +240,66 @@ header {
     margin: 10px;
 }
 
+#fun-facts-container {
+    display: flex; 
+    flex-direction: row;
+    gap: 250px;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+#fun-facts-container p, h2, h1 {
+    font-family: wanted-regular;
+}
+
+#fun-fact1 {
+
+}
+
+#fun-fact2 {
+    text-align: right;
+}
+
+#fun-fact3 {
+    text-align: center;
+}
+
+#fun-fact4 {
+    
+}
+
+#fun-fact5 {
+    text-align: end;
+}
+
+#fun-facts-text-container {
+    font-size: 20px;
+}
+
+#fun-facts-title1, #fun-facts-title2 {
+    font-size: 30px;
+}
+
+#mission-statement-container {
+    display: flex;
+    flex-direction: column;
+    background-color: #bdbdbd;
+    padding: 25px;
+}
+
+#mission-statement-title {
+    text-align: center;
+    font-size: 30px;
+    font-family: wanted-bold;
+}
+
+#mission-statement-text {
+    text-align: center;
+    font-size: 20px;
+    font-family: wanted-regular;
+}
+
+
 /* Responsive Adjustments */
 @media (max-width: 768px) {
     #about-container {

@@ -3,7 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Linking Google fonts for icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=arrow_forward" />
     <title>Home | Brooke Santiago - Sound Design & Engineer </title>
+    <!-- Linking SwiperJS CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="../static/styles/home.css">
 </head>
 
@@ -48,76 +52,78 @@
             </div>
         </div>
 
-        <div id="Experience">
-            <div id="experience-container">
-                <div id="experience-background">
-                    <section class="experience-images-container">
-                        <h2 class="experience-images-container-title">Experience</h2>
-                        <button class="pre-btn"><img src="../static/images/Experience/arrow.png" alt=" "></button>
-                        <button class="nxt-btn"><img src="../static/images/Experience/arrow.png" alt=" "></button>
-                        <div class="experience-images-container-container">
-                            <div class="experience-card">
-                                <div class="experience-image">
-                                    <span class="experience-image-tag">Show title</span>
-                                    <img src="../static/images/Experience/Picture1.jpg" alt="">
-                                    <button class="card-btn">View More</button>
-                                </div>
-                                <div class="experience-info">
-                                    <h2 class="experience-title">Experience</h2>
-                                    <p class="experience-short-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                                    <span class="experience-role-prefix">2021</span><span class="experience-real-role">2021</span>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-
-                    <section class="experience-images-container">
-                        <h2 class="experience-images-container-title">Experience</h2>
-                        <button class="pre-btn"><img src="../static/images/Experience/arrow.png" alt=" "></button>
-                        <button class="nxt-btn"><img src="../static/images/Experience/arrow.png" alt=" "></button>
-                        <div class="experience-images-container-container">
-                            <div class="experience-card">
-                                <div class="experience-image">
-                                    <span class="experience-image-tag">Show title</span>
-                                    <img src="../static/images/Experience/Picture1.jpg" alt="">
-                                    <button class="card-btn">View More</button>
-                                </div>
-                                <div class="experience-info">
-                                    <h2 class="experience-title">Experience</h2>
-                                    <p class="experience-short-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                                    <span class="experience-role-prefix">2021</span><span class="experience-real-role">2021</span>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-
-                    <section class="experience-images-container">
-                        <h2 class="experience-images-container-title">Experience</h2>
-                        <button class="pre-btn"><img src="../static/images/Experience/arrow.png" alt=" "></button>
-                        <button class="nxt-btn"><img src="../static/images/Experience/arrow.png" alt=" "></button>
-                        <div class="experience-images-container-container">
-                            <div class="experience-card">
-                                <div class="experience-image">
-                                    <span class="experience-image-tag">Show title</span>
-                                    <img src="../static/images/Experience/Picture1.jpg" alt="">
-                                    <button class="card-btn">View More</button>
-                                </div>
-                                <div class="experience-info">
-                                    <h2 class="experience-title">Experience</h2>
-                                    <p class="experience-short-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                                    <span class="experience-role-prefix">2021</span><span class="experience-real-role">2021</span>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-
+        <section class="experience-slider">
+            <div class="container swiper">
+                <div class="card-wrapper">
+                    <ul class="card-list swiper-wrapper">
+                        <li class="card-item swiper-slide">
+                            <a href="#" class="card-link">
+                                <img src="../static/images/Experience/designer.jpg" alt="Card Image"
+                                class="card-image">
+                                <p class="badge designer">Designer</p>
+                                <h2 class="card-title">Lorem ipsum dolor sit amet, 
+                                    consectetur adipisicing elit.</h2>
+                                    <button class="card-button material-symbols-outlined">
+                                        arrow_forward
+                                    </button>
+                            </a>
+                        </li>
+                        <li class="card-item swiper-slide">
+                            <a href="#" class="card-link">
+                                <img src="../static/images/Experience/developer.jpg" alt="Card Image"
+                                class="card-image">
+                                <p class="badge developer">Developer</p>
+                                <h2 class="card-title">Lorem ipsum dolor sit amet, 
+                                    consectetur adipisicing elit.</h2>
+                                    <button class="card-button material-symbols-outlined">
+                                        arrow_forward
+                                    </button>
+                            </a>
+                        </li>
+                        <li class="card-item swiper-slide">
+                            <a href="#" class="card-link">
+                                <img src="../static/images/Experience/marketer.jpg" alt="Card Image"
+                                class="card-image">
+                                <p class="badge marketer">Marketer</p>
+                                <h2 class="card-title">Lorem ipsum dolor sit amet, 
+                                    consectetur adipisicing elit.</h2>
+                                    <button class="card-button material-symbols-outlined">
+                                        arrow_forward
+                                    </button>
+                            </a>
+                        </li>
+                        <li class="card-item swiper-slide">
+                            <a href="#" class="card-link">
+                                <img src="../static/images/Experience/gamer.jpg" alt="Card Image"
+                                class="card-image">
+                                <p class="badge gamer">Gamer</p>
+                                <h2 class="card-title">Lorem ipsum dolor sit amet, 
+                                    consectetur adipisicing elit.</h2>
+                                    <button class="card-button material-symbols-outlined">
+                                        arrow_forward
+                                    </button>
+                            </a>
+                        </li>
+                        <li class="card-item swiper-slide">
+                            <a href="#" class="card-link">
+                                <img src="../static/images/Experience/editor.jpg" alt="Card Image"
+                                class="card-image">
+                                <p class="badge editor">Editor</p>
+                                <h2 class="card-title">Lorem ipsum dolor sit amet, 
+                                    consectetur adipisicing elit.</h2>
+                                    <button class="card-button material-symbols-outlined">
+                                        arrow_forward
+                                    </button>
+                            </a>
+                        </li>
+                    </ul>
+        
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-slide-button swiper-button-prev"></div>
+                    <div class="swiper-slide-button swiper-button-next"></div>
                 </div>
             </div>
-            <div id="experience-sliding-text">
-                <div id="experience-sliding-text-container">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel purus et felis fringilla ullamcorper. Donec vel nulla vel arcu viverra tristique. Proin vel nisl non nunc luctus tincidunt.</p>
-            </div>
-        </div>
+        </section>
 
         <section class="contactform-section">
             <div id="container">
@@ -147,7 +153,9 @@
                     </form>
                 </div>
             </section>
-
+        <!-- Linking SwiperJS Script -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <!-- Linking custom JavaScript -->
         <script src="../static/scripts/home.js"></script>
         
     </body>

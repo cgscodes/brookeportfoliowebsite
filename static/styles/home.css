@@ -182,27 +182,28 @@ header {
 
 .intro-text {
     color: white;
-    font-family: Easy-Grotesk-Black;
+    font-family: wanted-regular;
     width: 150%;
     padding: 20px;
 }
 
 .intro-text h1 {
     font-size: 120px;
-    font-family: Easy-Grotesk-Black;
+    font-family: wanted-extrabold;
+    font-weight: 100vh;
     line-height: 1;
     padding-bottom: 15px;
 }
 
 .intro-text h2 {
     font-size: 55px;
-    font-family: Easy-Grotesk-Black;
+    font-family: wanted-semibold;
     color:rgb(218, 218, 218);
 }
 
 .intro-text p {
     font-size: 25px;
-    font-family: Wanted-Medium;
+    font-family: wanted-regular;
     color: rgb(146, 146, 146);
 }
 
@@ -301,146 +302,134 @@ header {
     z-index: 1;
 }
 
-.experience-image-container {
-    position: relative;
-    overflow: hidden;
-    padding: 20px;
-}
-
-.experience-images-container-title {
-    padding: 0 10vw;
-    font-size: 30px;
-    font-weight: 500;
-    margin bottom: 40px;
-    text-transform: capitalize;
-}
-
-.experience-images-container-container {
-    padding: 0 10vw;
+/** Expeirence Container 2 **/
+.experience-slider {
     display: flex;
-    overflow-x: auto;
-    scroll-behavior: smooth;
-}
-
-.experience-images-container-container::-webkit-scrollbar {
-    display: none;
-
-}
-
-.experience-card {
-    flex: 0 0;
-    width: 400px;
-    height: 450px;
-    margin-right: 40px;
-}
-
-.experience-image {
-    position: relative;
-    width: 100%;
-    height: 350px;
-    overflow: hidden;
-}
-
-.experience-image-tag {
-    position: absolute;
-    background: #fff;
-    padding: 5px;
-    border-radius: 5px;
-    color: #009688;
-    right: 10px;
-    top: 10px;
-    text-transform: capitalize;
-}
-
-.card-btn {
-    position: absolute;
-    bottom: 10px;
-    left: 50%;
-    transform: translateX(-50%);
-    padding: 10px;
-    width: 90%;
-    text-transform: capitalize;
-    border: none;
-    outline: none;
-    background: #fff;
-    border-radius: 5px;
-    transition: 0.5s;
-    cursor: pointer;
-    opacity: 0;
-}
-
-.experience-card:hover .card-btn {
-    opacity: 1;
-}
-
-.card-btn:hover {
-    background: #009688;
-    color: #fff;
-}
-
-.experience-info {
-    width: 100%;
-    height: 100%;
-    padding-top: 10px;
-}
-
-.experience-title {
-    text-transform: uppercase;
-}
-
-.experience-short-description {
-    width: 100%;
-    height: 20px;
-    line-height: 20px;
-    overflow: hidden;
-    opacity: 0.5;
-    text-transform: capitalize;
-    margin-top: 5px 0;
-}
-
-.experience-role-prefix {
-    font-weight: 900;
-    font-size: 20px;
-}
-
-.experience-real-role {
-    margin-left: 5px;
-    opacity: 0.5;
-    font-weight: 450;
-}
-
-.pre-btn,
-.nxt-btn {
-    border: none;
-    width: 10vw;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    display: flex;
-    justify-content: center;
     align-items: center;
-    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #fff 100%);
+    justify-content: center;
+    min-height: 100vh;
+    background-color: rgba(54, 116, 223, 0.2); 
+}  
+
+.card-wrapper {
+    max-width: 1100px;
+    margin: 0 60px 35px;
+    padding: 20px 10px;
+    overflow: hidden;
+}
+
+.card-list .card-item {
+    list-style: none;
+    font-family: wanted-regular;
+}
+
+.card-list .card-item .card-link {
+    user-select: none;
+    display: block;
+    background: #fff;
+    padding: 18px;
+    border-radius: 12px;
+    text-decoration: none;
+    border: 2px solid transparent;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.05);
+    transition: 0.2s ease;
+}
+
+.card-list .card-item .card-link {
+    cursor: grabbing;
+}
+
+.card-list .card-item .card-link:hover {
+    border-color: #5372F0;
+}
+
+.card-list .card-link .card-image {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.card-list .card-link .badge {
+    color: #5372F0;
+    padding: 8px 16px;
+    font-size: 0.95rem;
+    font-weight: 500;
+    margin: 16px 0 18px;
+    background: #DDE4FF;
+    width: fit-content;
+    border-radius: 50px;
+}
+
+.card-list .card-link .badge.designer {
+    color: #B22485;
+    background: #F7DFF5;
+}
+
+.card-list .card-link .badge.developer {
+    color: ;
+    background: ;
+}
+
+.card-list .card-link .badge.marketer {
+    color: #B25A2B;
+    background: #FFE3D2;
+}
+
+.card-list .card-link .badge.gamer {
+    color: #205C20;
+    background: #D6F8D6;
+}
+
+.card-list .card-link .badge.editor {
+    color: #856404;
+    background: #fff3cd;
+}
+
+.card-list .card-link .card-title {
+    font-size: 1.19rem;
+    color: #000;
+    font-weight: 600;
+}
+
+.card-list .card-link .card-button {
+    height: 35px;
+    width: 35px;
+    color: #5372F0;
+    border-radius: 50%;
+    margin: 30px 0 5px;
+    background: none;
     cursor: pointer;
-    z-index: 9;
+    border: 2px solid #5372F0;
+    transform: rotate(-45deg);
+    transition: 0.4s ease;
 }
 
-.pre-btn {
-    left: 0;
-    transform: rotate(180deg);
+.card-list .card-link:hover .card-button {
+    color: #fff;
+    background: #5372F0;
 }
 
-.nxt-btn {
-    right: 0;
+.card-wrapper .swiper-pagination-bullet {
+    height: 13px;
+    width: 13px;
+    opacity: 0.5;
+    background: #5372F0;
 }
 
-.pre-btn img, 
-.nxt-btn img {
-    opacity: 0.2;
+.card-wrapper .swiper-slide-button {
+    color: #5372F0;
+    margin-top: -35px;
 }
 
-.pre-btn hover img, 
-.nxt-btn hover img {
-    opacity: 1;
+@media screen and (max-width: 768px) {
+    .card-wrapper {
+        margin: 0 10px 25px;
+    }
+
+    .card-wrapper .swiper-slide-button {
+        display: none;
+    }
 }
 
 /** Form **/
@@ -493,6 +482,7 @@ header {
 
 .form-input label {
     font-size: 17px;
+    font-family: wanted-regular;
 }
 
 .form-input input {
@@ -502,6 +492,7 @@ header {
     padding-left: 5px;
     padding-right: 5px;
     font-size: 15px;
+    font-family: wanted-regular;
 
     border-radius: 10px;
     border: 1px solid rgba(0, 0, 0, 0.193);
@@ -518,6 +509,7 @@ header {
     padding-right: 5px;
 
     font-size: 15px;
+    font-family: wanted-regular;
 
     border-radius: 10px;
     border: 1px solid rgba(0, 0, 0, 0.193);
@@ -536,6 +528,7 @@ header {
 
 .form-input2 label {
     font-size: 17px;
+    font-family: wanted-regular;
 }
 
 .form-input2 input {
@@ -545,6 +538,7 @@ header {
     padding-left: 5px;
     padding-right: 5px;
     font-size: 15px;
+    font-family: wanted-regular;
 
     border-radius: 10px;
     border: 1px solid rgba(0, 0, 0, 0.193);
@@ -575,6 +569,8 @@ header {
     gap: 15px;
 }
 
+
+
 .submit-row {
     width: 100%;
 
@@ -595,6 +591,7 @@ header {
 
     color: white;
     font-size: 20px;
+    font-family: wanted-regular;
 }
 
 /** Footer Bottom **/

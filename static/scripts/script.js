@@ -1,10 +1,3 @@
-function toggleMenu() {
-    const menu = document.querySelector('#menu ul');
-    menu.classList.toggle('show');
-}
-
-/** Swiper **/
-
 new Swiper('.card-wrapper', {
     loop: true,
     spaceBetween: 30,

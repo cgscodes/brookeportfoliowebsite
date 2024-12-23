@@ -147,64 +147,266 @@ header {
     text-decoration: solid underline 1px;
 }
 
+/** Mobile Devices **/
+
+#hamburger-icon {
+    display: none;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    #hamburger-icon {
+        display: block;
+    }
+
+    #menu ul {
+        display: none;
+        flex-direction: column;
+        background-color: black;
+        position: absolute;
+        top: 60px;
+        right: 10px;
+        width: 200px;
+        z-index: 10;
+    }
+
+    #menu ul.show {
+        display: flex;
+    }
+}
+
 /** Header Container Ends **/
 
 /** Body **/
 
-/** Footer Bottom **/
-#footer-bottom {
-    background-color: #000000;
-    color: white;
-    width: 100%;
-
-    padding-top: 30px;
-    padding-bottom: 30px;
-
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    flex-direction: row;
-    gap: 20px;
-
-}
-
-
-
-#footer-bottom #social-icons {
-    width: 100%;
-    justify-content: center;
-    display: flex;
-    flex-direction: row;
-    gap: 15px;
-}
-
-#social-icons div {
-    border: 1px solid white;
-    border-radius: 50%;
-    padding-top: 3px;
-    padding-left: 3px;
-    padding-right: 3px;
-    padding-bottom: 3px;
-
-
-
-    background-color: white;
-}
-
-#social-icons div a {
-    height: 100%;
+/** Expeirence Container **/
+.experience-slider {
     display: flex;
     align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: rgba(54, 116, 223, 0.2); 
+}  
+
+.card-wrapper {
+    max-width: 1100px;
+    margin: 0 60px 35px;
+    padding: 20px 10px;
+    overflow: hidden;
+}
+
+.card-list .card-item {
+    list-style: none;
+    font-family: wanted-regular;
+}
+
+.card-list .card-item .card-link {
+    user-select: none;
+    display: block;
+    background: #fff;
+    padding: 18px;
+    border-radius: 12px;
+    text-decoration: none;
+    border: 2px solid transparent;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.05);
+    transition: 0.2s ease;
+}
+
+.card-list .card-item .card-link {
+    cursor: grabbing;
+}
+
+.card-list .card-item .card-link:hover {
+    border-color: #5372F0;
+}
+
+.card-list .card-link .card-image {
     width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.card-list .card-link .badge {
+    color: #5372F0;
+    padding: 8px 16px;
+    font-size: 0.95rem;
+    font-weight: 500;
+    margin: 16px 0 18px;
+    background: #DDE4FF;
+    width: fit-content;
+    border-radius: 50px;
+}
+
+.card-list .card-link .badge.designer {
+    color: #B22485;
+    background: #F7DFF5;
+}
+
+.card-list .card-link .badge.developer {
+    color: ;
+    background: ;
+}
+
+.card-list .card-link .badge.marketer {
+    color: #B25A2B;
+    background: #FFE3D2;
+}
+
+.card-list .card-link .badge.gamer {
+    color: #205C20;
+    background: #D6F8D6;
+}
+
+.card-list .card-link .badge.editor {
+    color: #856404;
+    background: #fff3cd;
+}
+
+.card-list .card-link .card-title {
+    font-size: 1.19rem;
+    color: #000;
+    font-weight: 600;
+}
+
+.card-list .card-link .card-button {
+    height: 35px;
+    width: 35px;
+    color: #5372F0;
+    border-radius: 50%;
+    margin: 30px 0 5px;
+    background: none;
+    cursor: pointer;
+    border: 2px solid #5372F0;
+    transform: rotate(-45deg);
+    transition: 0.4s ease;
+}
+
+.card-list .card-link:hover .card-button {
+    color: #fff;
+    background: #5372F0;
+}
+
+.card-wrapper .swiper-pagination-bullet {
+    height: 13px;
+    width: 13px;
+    opacity: 0.5;
+    background: #5372F0;
+}
+
+.card-wrapper .swiper-slide-button {
+    color: #5372F0;
+    margin-top: -35px;
+}
+
+@media screen and (max-width: 768px) {
+    .card-wrapper {
+        margin: 0 10px 25px;
+    }
+
+    .card-wrapper .swiper-slide-button {
+        display: none;
+    }
+}
+
+/** Footer Bottom **/
+footer img {
+    width: 100%;
+    z-index: 20;
+    margin-bottom: -4px;
+}
+
+.footerContainer {
+    width: 100%;
+    padding: 70px 30px 20px;
+    background-color: #111;
+}
+
+.socialIcons {
+    display: flex;
     justify-content: center;
 }
 
-
-#copyright-section p a {
+.socialIcons a {
     text-decoration: none;
-    color: white;
+    padding: 10px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 50%;
 }
 
-#copyright-section p a:hover {
-    color: #008d95;
+.socialIcons a {
+    font-size: 2em;
+    color: black;
+    opacity: 0.9;
+}
+
+/** Hover Effects on Social Media Icons **/
+.socialIcons a:hover {
+    background-color: #111;
+    transition: 0.5s;
+}
+
+.socialIcons a:hover i {
+    background-color: white;
+    transition: 0.5s;
+    border-radius: 50%;
+}
+
+.footerNav {
+    margin: 30px 0;
+}
+
+.footerNav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: nonedisc;
+}
+
+.footerNav ul li a {
+    color: white;
+    margin: 20px;
+    text-decoration: none;
+    font-family: Wanted-Regular;
+    font-size: 1.3em;
+    opacity: 0.7;
+    transition: 0.5s;
+}
+
+.footerNav ul li a:hover {
+    opacity: 1;
+    transition: 0.5s;
+}
+
+.footerBottom {
+    background-color: #000;
+    padding: 20px;
+    text-align: center;
+}
+
+.footerBottom p {
+    color: white;
+    font-family: Wanted-Regular;
+    font-size: 0.8em;
+}
+
+.designer {
+    opacity: 0.7;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin: 0px 5px;
+}
+
+@media (max-width: 700px){
+    .footerNav ul {
+        flex-direction: column;
+    }
+    .footerNav ul li {
+        width: 100%;
+        text-align: center;
+        margin: 10px;
+    }
 }
